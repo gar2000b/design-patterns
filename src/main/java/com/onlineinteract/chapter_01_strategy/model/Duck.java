@@ -1,4 +1,7 @@
-package com.onlineinteract.chapter_01_strategy;
+package com.onlineinteract.chapter_01_strategy.model;
+
+import com.onlineinteract.chapter_01_strategy.behavior.api.FlyBehavior;
+import com.onlineinteract.chapter_01_strategy.behavior.api.QuackBehavior;
 
 public abstract class Duck {
 	FlyBehavior flyBehavior;

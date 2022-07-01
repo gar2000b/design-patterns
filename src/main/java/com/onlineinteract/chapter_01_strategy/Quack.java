@@ -1,9 +1,0 @@
-package com.onlineinteract.chapter_01_strategy;
-
-public class Quack implements QuackBehavior {
-
-	@Override
-	public void quack() {
-		System.out.println("Quack");
-	}
-}
