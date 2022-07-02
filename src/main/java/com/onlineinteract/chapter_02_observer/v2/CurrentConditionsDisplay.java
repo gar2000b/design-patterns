@@ -1,4 +1,4 @@
-package com.onlineinteract.chapter_02_observer;
+package com.onlineinteract.chapter_02_observer.v2;
 
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
 	private float temperature;
@@ -10,9 +10,9 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
 		this.weatherData.registerObserver(this);
 	}
 	
-	public void update(float temperature, float humidity, float pressure) {
-		this.temperature = temperature;
-		this.humidity = humidity;
+	public void update() {
+		this.temperature = weatherData.getTemperature();
+		this.humidity = weatherData.getHumidity();
 		display();
 	}
 	

@@ -1,4 +1,4 @@
-package com.onlineinteract.chapter_02_observer;
+package com.onlineinteract.chapter_02_observer.v1;
 
 import java.util.ArrayList;
 import java.util.List;
