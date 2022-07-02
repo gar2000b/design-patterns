@@ -1,5 +1,11 @@
 package com.onlineinteract.chapter_02_observer.v2;
 
+import com.onlineinteract.chapter_02_observer.v2.displays.CurrentConditionsDisplay;
+import com.onlineinteract.chapter_02_observer.v2.displays.ForecastDisplay;
+import com.onlineinteract.chapter_02_observer.v2.displays.HeatIndexDisplay;
+import com.onlineinteract.chapter_02_observer.v2.displays.StatisticsDisplay;
+import com.onlineinteract.chapter_02_observer.v2.weather.WeatherData;
+
 public class WeatherStation {
 
 	public static void main(String[] args) {

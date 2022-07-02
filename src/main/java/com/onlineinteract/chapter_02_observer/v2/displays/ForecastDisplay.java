@@ -1,4 +1,8 @@
-package com.onlineinteract.chapter_02_observer.v1;
+package com.onlineinteract.chapter_02_observer.v2.displays;
+
+import com.onlineinteract.chapter_02_observer.v2.displays.api.DisplayElement;
+import com.onlineinteract.chapter_02_observer.v2.displays.api.Observer;
+import com.onlineinteract.chapter_02_observer.v2.weather.WeatherData;
 
 public class ForecastDisplay implements Observer, DisplayElement {
 	private float currentPressure = 29.92f;  
@@ -10,10 +14,9 @@ public class ForecastDisplay implements Observer, DisplayElement {
 		this.weatherData.registerObserver(this);
 	}
 
-	public void update(float temp, float humidity, float pressure) {
+	public void update() {
         lastPressure = currentPressure;
-		currentPressure = pressure;
-
+		currentPressure = weatherData.getPressure();
 		display();
 	}
 

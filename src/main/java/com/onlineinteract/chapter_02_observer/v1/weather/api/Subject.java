@@ -1,4 +1,6 @@
-package com.onlineinteract.chapter_02_observer.v2;
+package com.onlineinteract.chapter_02_observer.v1.weather.api;
+
+import com.onlineinteract.chapter_02_observer.v1.displays.api.Observer;
 
 public interface Subject {
 	public void registerObserver(Observer o);

@@ -1,4 +1,8 @@
-package com.onlineinteract.chapter_02_observer.v1;
+package com.onlineinteract.chapter_02_observer.v1.displays;
+
+import com.onlineinteract.chapter_02_observer.v1.displays.api.DisplayElement;
+import com.onlineinteract.chapter_02_observer.v1.displays.api.Observer;
+import com.onlineinteract.chapter_02_observer.v1.weather.WeatherData;
 
 public class HeatIndexDisplay implements Observer, DisplayElement {
 	float heatIndex = 0.0f;

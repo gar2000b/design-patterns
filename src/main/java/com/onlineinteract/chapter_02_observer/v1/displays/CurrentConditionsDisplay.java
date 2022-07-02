@@ -1,4 +1,8 @@
-package com.onlineinteract.chapter_02_observer.v1;
+package com.onlineinteract.chapter_02_observer.v1.displays;
+
+import com.onlineinteract.chapter_02_observer.v1.displays.api.DisplayElement;
+import com.onlineinteract.chapter_02_observer.v1.displays.api.Observer;
+import com.onlineinteract.chapter_02_observer.v1.weather.WeatherData;
 
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
 	private float temperature;

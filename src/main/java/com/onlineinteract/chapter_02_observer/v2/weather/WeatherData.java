@@ -1,7 +1,10 @@
-package com.onlineinteract.chapter_02_observer.v2;
+package com.onlineinteract.chapter_02_observer.v2.weather;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.onlineinteract.chapter_02_observer.v2.displays.api.Observer;
+import com.onlineinteract.chapter_02_observer.v2.weather.api.Subject;
 
 public class WeatherData implements Subject {
 	private List<Observer> observers;
